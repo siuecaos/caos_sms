@@ -1,0 +1,17 @@
+<% title "Admins" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for admin in @admins %>
+    <tr>
+      <td><%=h admin.name %></td>
+      <td><%= link_to "Show", admin %></td>
+      <td><%= link_to "Edit", edit_admin_path(admin) %></td>
+      <td><%= link_to "Destroy", admin, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Admin", new_admin_path %></p>

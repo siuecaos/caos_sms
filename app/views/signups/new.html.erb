@@ -1,0 +1,12 @@
+<% title "New Signup" %>
+
+<% form_for @signup do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
+
+
