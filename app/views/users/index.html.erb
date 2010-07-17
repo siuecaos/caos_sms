@@ -1,0 +1,14 @@
+<% title "Users" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for users in @users %>
+    <tr>
+      <td><%=h users.name %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Users", new_user_path %></p>

@@ -1,0 +1,13 @@
+<% title "New Users" %>
+
+<% form_for @users do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
+
+
+<p><%= link_to "Back to List", users_path %></p>
